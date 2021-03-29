@@ -1,7 +1,12 @@
 .service-icon{
     height: 200px;
     width: 200px;
-    border-radius: 40%;
+    border-radius: 70px;
+    border: solid rgb(70, 70, 70) 2px;
+}
+
+/* .border-black{
+    border: solid black 2px;
 }
 
 .border-pink{
@@ -18,7 +23,7 @@
 
 .border-purple{
     border: solid rgb(173, 2, 224) 2px ;
-}
+} */
 
 .text-left{
     text-align: left;
@@ -26,3 +31,21 @@
     display: inline-block;
 }
 
+.round-button{
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    min-height: 50px;
+    text-align: center;
+    width:fit-content;
+    padding: 10px 0;
+}
+
+.no-deco{
+    text-decoration: none;
+}
+
+.round-button:hover{
+    background-color: rgb(187, 187, 187);
+    color: rgb(0, 0, 0);
+}
