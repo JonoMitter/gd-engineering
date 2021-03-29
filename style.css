@@ -1,0 +1,28 @@
+.service-icon{
+    height: 200px;
+    width: 200px;
+    border-radius: 40%;
+}
+
+.border-pink{
+    border: solid rgb(253, 62, 237) 2px ;
+}
+
+.border-lime{
+    border: solid rgb(123, 255, 47) 2px ;
+}
+
+.border-cyan{
+    border: solid rgb(19, 255, 235) 2px ;
+}
+
+.border-purple{
+    border: solid rgb(173, 2, 224) 2px ;
+}
+
+.text-left{
+    text-align: left;
+    margin: auto;
+    display: inline-block;
+}
+
