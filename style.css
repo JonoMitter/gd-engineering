@@ -55,8 +55,27 @@
 }
 
 .orange{
-    background-color: #f79c6328;
+    background-color: #f79c6328;   
+}
+
+.button{
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    /* border: black 1px solid; */
+    background-color: #364c95;
+    color: white;
+    border-radius: 8px;
+}
+
+.button:hover{
+    background-color: #364c95c7;
     
+}
+
+.blue-hover:hover{
+    background-color: #364c9548;
+    border-radius: 10px 10px 0 0;
 }
 
 body,
@@ -100,7 +119,7 @@ html {
     /* The height is 400 pixels */
     width: 400px;
     /* The width is the width of the web page */
-  }
+}
 
 
 @media only screen and (max-width: 600px){
