@@ -101,3 +101,10 @@ html {
     width: 400px;
     /* The width is the width of the web page */
   }
+
+
+@media only screen and (max-width: 600px){
+    .container{
+        display:inline;
+    } 
+};
