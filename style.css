@@ -13,6 +13,10 @@
 
 }
 
+.bold{
+    font-weight: bold;
+}
+
 /* div.form{
     width:80%;
     display:block;
