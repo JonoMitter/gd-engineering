@@ -9,8 +9,7 @@
 
 .nav-logo{
     padding: 5px;
-    height:80px;
-
+    height: 80px;
 }
 
 .bold{
@@ -165,7 +164,7 @@ html {
         min-width: 200px;
     }
     .nav-logo{
-        height: 10px;
+        height: 59px;
     }
     .mobile-padding{
         padding: 20px;
