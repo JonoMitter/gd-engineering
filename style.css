@@ -1,4 +1,4 @@
-.service-icon{
+.service-icon {
     min-height: 150px;
     min-width: 150px;
     height: 150px;
@@ -7,16 +7,16 @@
     border: solid #364c95 1px;
 }
 
-img.service-icon{
+img.service-icon {
     object-fit: cover;
 }
 
-.nav-logo{
+.nav-logo {
     padding: 5px;
     height: 80px;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
@@ -26,21 +26,19 @@ img.service-icon{
     align-content: center;
 } */
 
-div.form
-{
-    margin:0 auto;
-    width:85%;
+div.form {
+    margin: 0 auto;
+    width: 85%;
     min-width: 550px;
-    display:block;
+    display: block;
     align-content: center;
 }
 
-.padding-64-16{
+.padding-64-16 {
     padding: 64px 16px;
 }
 
-form
-{
+form {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -48,13 +46,13 @@ form
     width: 100%;
 }
 
-.container{
+.container {
     margin-left: auto;
     margin-right: auto;
     width: 65%;
 }
 
-.bottom-right{
+.bottom-right {
     position: absolute;
     bottom: 0;
     right: 17.5%;
@@ -65,41 +63,41 @@ form
     color: #f79c63;  //ORANGE
 } */
 
-.text-left{
+.text-left {
     text-align: left;
     margin: auto;
     display: inline-block;
 }
 
-.round-button{
+.round-button {
     border-radius: 8px;
     border: solid 2px white;
-    background-color:rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     min-height: 50px;
     text-align: center;
-    width:fit-content;
+    width: fit-content;
     padding: 10px 0;
 }
 
-.round-button:hover{
+.round-button:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
 
-.no-deco{
+.no-deco {
     text-decoration: none;
 }
 
-.orange{
-    background-color: #f79c6325;   
+.orange {
+    background-color: #f79c6325;
 }
 
-.blue{
+.blue {
     background-color: #364c9517;
 }
 
-.button{
+.button {
     display: inline-block;
     padding: 8px 16px;
     text-decoration: none;
@@ -108,39 +106,31 @@ form
     border-radius: 8px;
 }
 
-.button:hover{
-    background-color: #364c95c7; 
+.button:hover {
+    background-color: #364c95c7;
 }
 
-a.blue-hover:hover{
-    color:white;
+a.blue-hover:hover {
+    color: white;
     background-color: #364c9594;
     border-radius: 10px 10px 0 0;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body, h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif
 }
 
-body,
-html {
+body, html {
     height: 100%;
     line-height: 1.8;
 }
 
 /* Full height image header */
+
 .bgimg-1 {
     background-position: center;
     background-size: cover;
-    background-image:
-        linear-gradient(to bottom, rgba(54, 76, 149, 0.50), rgba(255, 98, 0, 0.95)),
-        url('images/background.jpg');
+    background-image: linear-gradient(to bottom, rgba(54, 76, 149, 0.50), rgba(255, 98, 0, 0.95)), url('images/background.jpg');
     min-height: 93%;
     box-shadow: inset 0 0 0 2000px rgba(0, 16, 39, 0.7);
 }
@@ -154,40 +144,41 @@ html {
     width: 400px;
 }
 
-.padding-top{
+.padding-top {
     padding-top: 10px;
 }
 
-.padding{
-    padding:48px;
+.padding {
+    padding: 48px;
 }
 
-.min-height{
+.min-height {
     min-height: 500px;
     height: 93.5%;
 }
 
-.container{
+.container {
     min-width: 640px;
 }
 
-@media only screen and (max-width: 600px){
-    .container{
-        display:inline;
-    } 
-    div.form
-    {
-        width:100%;
+@media only screen and (max-width: 600px) {
+    .container {
+        display: inline;
+    }
+    div.form {
+        width: 100%;
         min-width: 200px;
     }
-    .nav-logo{
+    .nav-logo {
         height: 59px;
     }
-    .mobile-padding{
+    .mobile-padding {
         padding: 20px;
     }
-    .bgimg-1{
+    .bgimg-1 {
         height: 93%;
         min-height: 700px;
     }
-};
+}
+
+;
