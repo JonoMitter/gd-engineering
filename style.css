@@ -30,6 +30,11 @@ div.form
     display:block;
     align-content: center;
 }
+
+.padding-64-16{
+    padding: 64px 16px;
+}
+
 form
 {
     display: inline-block;
@@ -100,12 +105,12 @@ form
 }
 
 .button:hover{
-    background-color: #364c95c7;
-    
+    background-color: #364c95c7; 
 }
 
-.blue-hover:hover{
-    background-color: #364c9548;
+a.blue-hover:hover{
+    color:white;
+    background-color: #364c9594;
     border-radius: 10px 10px 0 0;
 }
 
@@ -155,7 +160,7 @@ html {
 
 .min-height{
     min-height: 500px;
-    height: 93%;
+    height: 93.5%;
 }
 
 .container{
