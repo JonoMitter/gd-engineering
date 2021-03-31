@@ -163,5 +163,8 @@ html {
     .nav-logo{
         height: 59px;
     }
+    .mobile-padding{
+        padding: 20px;
+    }
 
 };
