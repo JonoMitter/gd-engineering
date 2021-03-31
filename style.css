@@ -87,6 +87,10 @@ form
     background-color: #f79c6325;   
 }
 
+.blue{
+    background-color: #364c9517;
+}
+
 .button{
     display: inline-block;
     padding: 8px 16px;
