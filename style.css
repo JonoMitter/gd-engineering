@@ -160,4 +160,8 @@ html {
         width:100%;
         min-width: 200px;
     }
+    .nav-logo{
+        height: 59px;
+    }
+
 };
