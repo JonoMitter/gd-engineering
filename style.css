@@ -7,6 +7,10 @@
     border: solid #364c95 1px;
 }
 
+img.service-icon{
+    object-fit: cover;
+}
+
 .nav-logo{
     padding: 5px;
     height: 80px;
