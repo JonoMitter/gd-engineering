@@ -101,13 +101,15 @@ form {
     display: inline-block;
     padding: 8px 16px;
     text-decoration: none;
-    background-color: #364c95;
-    color: white;
+    background-color: none;
+    color: #364c95;
     border-radius: 8px;
+    border: #364c95 2px solid;
 }
 
 .button:hover {
-    background-color: #364c95c7;
+    background-color: #364c95;
+    color: white;
 }
 
 a.blue-hover:hover {
