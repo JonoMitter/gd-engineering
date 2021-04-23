@@ -6,7 +6,7 @@
 .service {
     background-color: #364c9517;
     /* color: white; */
-    margin: 5%;
+    margin: 2%;
     padding: 10%;
     border-radius: 5%;
     border: solid rgb(255, 255, 255) 2px;
@@ -241,6 +241,9 @@ textarea{
     .mobile-center{
         text-align: center;
     }
+    .service {
+        width: 80vw;
+    }
 }
 
 @media only screen and (max-width: 1320px) {
@@ -248,10 +251,12 @@ textarea{
         display: inline-block;
     }
     .service {
-        max-width: 500px;
-        min-width: 60%;
-        width: 50vw;
+        /* max-width: 100%; */
+        /* min-width: 60%; */
+        /* width: 100%; */
         margin: 0;
+        width:350px;
+        height: 450px;
     }
     #services {
         text-align: center;
