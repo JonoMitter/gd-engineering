@@ -214,12 +214,10 @@ textarea{
 
 .map-width{
     height: 500px;
-    width: 700px;
+    /* width: 700px; */
+    width: 100%;
 }
 
-.full-width{
-    /* width: 100vw; */
-}
 
 @media only screen and (max-width: 600px) {
     .container {
@@ -240,7 +238,8 @@ textarea{
         min-height: 700px;
     }
     .map-width{ 
-        max-width: 300px;
+        /* max-width: 300px; */
+        width: 100%;
     }
     .mobile-center{
         text-align: center;
@@ -248,9 +247,15 @@ textarea{
     .service {
         width: 80vw;
     }
+    .grid5 {
+        display: inline-block;
+    }
+    #services {
+        text-align: center;
+    }
 }
 
-@media only screen and (max-width: 1320px) {
+@media only screen and (max-width: 1320px) and (min-width: 600px) {
     .grid5 {
         display: inline-block;
     }
@@ -264,7 +269,7 @@ textarea{
         text-align: center;
     }
     .map-width{
-        width: 400px;
+        width: 100%;
     }
 }
 
