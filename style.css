@@ -217,6 +217,10 @@ textarea{
     width: 700px;
 }
 
+.full-width{
+    /* width: 100vw; */
+}
+
 @media only screen and (max-width: 600px) {
     .container {
         display: inline;
@@ -251,18 +255,16 @@ textarea{
         display: inline-block;
     }
     .service {
-        /* max-width: 100%; */
-        /* min-width: 60%; */
-        /* width: 100%; */
-        margin: 0;
-        width:350px;
+        /* margin-top: 5%; */
+        margin: 5% 0 10% 0;
+        width: 350px;
         height: 450px;
     }
     #services {
         text-align: center;
     }
     .map-width{
-        width: 600px;
+        width: 400px;
     }
 }
 
