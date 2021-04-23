@@ -39,7 +39,8 @@
     <!-- Sidebar on small screens when clicking the menu icon -->
     <nav class="w3-sidebar w3-bar-block side-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
         style="display:none" id="mySidebar">
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item side-button w3-large w3-padding-16 nav-margin">Close
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-bar-item side-button w3-large w3-padding-16 nav-margin">Close
             ×</a>
         <a href="#services" onclick="w3_close()" class="w3-bar-item side-button">SERVICES</a>
         <a href="#work" onclick="w3_close()" class="w3-bar-item side-button">WORK</a>
@@ -54,8 +55,8 @@
             <span class="w3-large">//TODO come up with text for here i.e. "Let us create the solutions to your
                 engineering problems"</span>
             <br>
-            <a href="#contact"
-                    class="button-white w3-padding-large w3-large w3-margin-top no-deco"><b>CONTACT US</b></a>
+            <a href="#contact" class="button-white w3-padding-large w3-large w3-margin-top no-deco"><b>CONTACT
+                    US</b></a>
         </div>
     </header>
 
@@ -67,8 +68,14 @@
                 <p>//TODO come up with something to write here about GD and maybe its history</p>
                 <p><a href="#work" class="button"><i class="fa fa-th"> </i> View Our Works</a></p>
             </div>
-            <div class="w3-col m6">
-                <div class="mapouter"><div class="gmap_canvas"><iframe width="800" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=21/23%20Cowie%20St,%20North%20Geelong%20VIC%203215&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies2.org">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:800px;}</style><a href="https://www.embedgooglemap.net">insert google map html</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:800px;}</style></div></div>
+            <div class="w3-col m6 mobile-center">
+                <div class="mapouter map-width">
+                    <div class="gmap_canvas map-width"><iframe class="map-width" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=21/23%20Cowie%20St,%20North%20Geelong%20VIC%203215&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://fmovies2.org">fmovies</a><br>
+                    </div>
+                </div>
                 <br>
                 <i>21/23 Cowie St, North Geelong VIC 3215</i>
             </div>
@@ -173,7 +180,8 @@
                     <p><input class="w3-input w3-border" type="text" placeholder="Email e.g. johnsmith@gmail.com"
                             required name="Email"></p>
                     <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-                    <p><textarea class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></textarea></p>
+                    <p><textarea class="w3-input w3-border" type="text" placeholder="Message" required
+                            name="Message"></textarea></p>
                     <p>
                         <button class="button" type="submit">
                             <i class="fa fa-paper-plane"></i> SEND MESSAGE

@@ -201,6 +201,22 @@ textarea{
     margin-top: 59px;
 }
 
+.mapouter {
+    /* position: relative; */
+    display: inline-block;
+    text-align: right;
+}
+/* </style><a href="https://www.embedgooglemap.net">insert google map html</a> */
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+}
+
+.map-width{
+    height: 500px;
+    width: 700px;
+}
+
 @media only screen and (max-width: 600px) {
     .container {
         display: inline;
@@ -219,6 +235,12 @@ textarea{
         height: 93%;
         min-height: 700px;
     }
+    .map-width{ 
+        max-width: 350px;
+    }
+    .mobile-center{
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 1320px) {
@@ -233,6 +255,9 @@ textarea{
     }
     #services {
         text-align: center;
+    }
+    .map-width{
+        width: 600px;
     }
 }
 
