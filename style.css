@@ -1,9 +1,9 @@
-:root{
+:root {
     --main-blue: #364c95;
     --main-orange: #f79c63;
 }
 
-.service{
+.service {
     background-color: #364c9517;
     /* color: white; */
     margin: 5%;
@@ -25,10 +25,11 @@ img.service-icon {
     object-fit: cover;
 }
 
-.grid5{
+.grid5 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+
 .nav-logo {
     padding: 5px;
     height: 80px;
@@ -108,7 +109,7 @@ form {
     border: #ffffff 2px solid;
 }
 
-.button-white:hover{
+.button-white:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
@@ -168,12 +169,18 @@ body, html {
     min-width: 640px;
 }
 
-.side-black{
+textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 80px;
+}
+
+.side-black {
     color: #fff!important;
     background-color: rgba(0, 0, 0, 0.9)!important;
 }
 
-.side-button{
+.side-button {
     border: none;
     display: inline-block;
     padding: 8px 16px;
@@ -186,11 +193,11 @@ body, html {
     white-space: nowrap;
 }
 
-.side-button:hover{
+.side-button:hover {
     background-color: rgb(36, 36, 36);
 }
 
-.nav-margin{
+.nav-margin {
     margin-top: 59px;
 }
 
@@ -214,16 +221,16 @@ body, html {
     }
 }
 
-@media only screen and (max-width: 1320px){
-    .grid5{
-        display:inline-block;
+@media only screen and (max-width: 1320px) {
+    .grid5 {
+        display: inline-block;
     }
-    .service{
+    .service {
         max-width: 500px;
         min-width: 60%;
         width: 50vw;
     }
-    #services{
+    #services {
         text-align: center;
     }
 }
