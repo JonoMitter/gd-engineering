@@ -229,6 +229,7 @@ textarea{
         max-width: 500px;
         min-width: 60%;
         width: 50vw;
+        margin: 0;
     }
     #services {
         text-align: center;
