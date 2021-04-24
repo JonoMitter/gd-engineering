@@ -220,6 +220,13 @@ textarea{
     padding-bottom: 3%;
 }
 
+.burger:hover, .burger:focus{
+    background: #364c952f;
+}
+
+.burger{
+    padding: 16px !important;
+}
 
 @media only screen and (max-width: 600px) {
     .container {
