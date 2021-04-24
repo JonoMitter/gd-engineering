@@ -97,6 +97,7 @@ form {
     color: #364c95;
     border-radius: 8px;
     border: var(--main-blue) 2px solid;
+    font-weight: bold;
 }
 
 .button-white {
