@@ -93,7 +93,7 @@ form {
     display: inline-block;
     padding: 8px 16px;
     text-decoration: none;
-    background-color: none;
+    background: none;
     color: #364c95;
     border-radius: 8px;
     border: var(--main-blue) 2px solid;
@@ -202,11 +202,9 @@ textarea{
 }
 
 .mapouter {
-    /* position: relative; */
     display: inline-block;
     text-align: right;
 }
-/* </style><a href="https://www.embedgooglemap.net">insert google map html</a> */
 .gmap_canvas {
     overflow: hidden;
     background: none !important;
@@ -214,8 +212,11 @@ textarea{
 
 .map-width{
     height: 500px;
-    /* width: 700px; */
     width: 100%;
+}
+
+#services{
+    padding-bottom: 3%;
 }
 
 
@@ -238,7 +239,6 @@ textarea{
         min-height: 700px;
     }
     .map-width{ 
-        /* max-width: 300px; */
         width: 100%;
     }
     .mobile-center{
