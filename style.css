@@ -36,7 +36,6 @@ textarea {
 div.form {
   margin: 0 auto;
   width: 85%;
-  min-width: 550px;
   display: block;
   align-content: center;
 }
@@ -65,10 +64,6 @@ img.service-icon {
 #services {
   text-align: center;
   padding-bottom: 3%;
-}
-
-#services p {
-  margin-top: 0;
 }
 
 #map {
@@ -100,6 +95,12 @@ img.service-icon {
   padding-right: 3%;
 }
 
+/* Divides the Services section into five columns */
+.five-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
 /* Divides the About Us section into two columns */
 .two-cols {
   display: grid;
@@ -114,17 +115,16 @@ img.service-icon {
   border-radius: 5%;
 }
 
+.service p {
+  margin: 0;
+}
+
 .service-icon {
   min-height: 150px;
   min-width: 150px;
   height: 180px;
   width: 180px;
   border-radius: 30px;
-}
-
-.five-cols {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .nav-logo {
@@ -203,16 +203,17 @@ img.service-icon {
   cursor: pointer;
 }
 
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
 .bgimg-1 {
+  margin-top: 80px;
   background-position: center;
   background-size: cover;
   background-image: linear-gradient( to bottom, rgba(54, 76, 149, 0.5), rgba(255, 98, 0, 0.95)), url("images/background.jpg");
-  min-height: 93%;
+  min-height: 80%;
   box-shadow: inset 0 0 0 2000px rgba(0, 16, 39, 0.7);
-}
-
-.w3-bar .w3-button {
-  padding: 16px;
 }
 
 .min-height {
@@ -225,8 +226,17 @@ img.service-icon {
   background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
+.burger {
+  padding: 16px !important;
+}
+
+.burger:hover, .burger:focus {
+  background: var(--main-blue);
+  color: white;
+}
+
 .side-button {
-  border: none;
+  /* border: none; */
   display: inline-block;
   padding: 8px 16px;
   vertical-align: middle;
@@ -236,14 +246,20 @@ img.service-icon {
   text-align: center;
   cursor: pointer;
   white-space: nowrap;
+  font-size: 20px;
+  margin-bottom: 7px;
 }
 
 .side-button:hover {
-  background-color: rgb(36, 36, 36);
+  background: var(--main-blue);
+  padding: 8px 16px;
 }
 
-.nav-margin {
-  margin-top: 59px;
+.close-button{
+  text-align: right !important;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.5;
 }
 
 .mapouter {
@@ -261,21 +277,11 @@ img.service-icon {
   width: 100%;
 }
 
-
-
-.burger:hover, .burger:focus {
-  background: #364c952f;
-}
-
-.burger {
-  padding: 16px !important;
-}
-
 /*
  *  Mobile view 
- *  (Screen Width <= 600px) 
+ *  (Screen Width <= 601px) 
  */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 601px) {
   div.form {
     width: 100%;
     min-width: 200px;
@@ -295,7 +301,7 @@ img.service-icon {
   .container {
     padding: 25px;
   }
-  
+
   .nav-container {
     display: inline;
     padding: 0 25px;
@@ -304,14 +310,15 @@ img.service-icon {
   .nav-logo {
     height: 59px;
   }
-  
+
   .box-inherit {
     box-sizing: inherit;
   }
-
+  
   .bgimg-1 {
     height: 80%;
     min-height: 700px;
+    margin-top: 59px;
   }
 
   .map-width {
@@ -327,22 +334,22 @@ img.service-icon {
     margin: 0;
   }
 
-  .five-cols{
+  .five-cols, .two-cols {
     display: inline-block;
   }
-
-  .two-cols {
-    display: inline;
-  }
-
 }
 
 /* 
  *  Tablet and Small Desktop view 
  *  (Screen Width > 600px & Screen Width <= 1320px) 
  */
+
 @media only screen and (max-width: 1320px) and (min-width: 601px) {
-  #services {
+  div.form {
+    width: 90%;
+  }
+    
+    #services {
     text-align: center;
   }
 
@@ -355,10 +362,10 @@ img.service-icon {
     padding: 35px;
   }
 
-  .nav-container{
+  .nav-container {
     padding: 0 35px;
   }
-  
+
   /* Turns off five column services for tablet */
   .five-cols {
     display: inline-block;
@@ -369,9 +376,9 @@ img.service-icon {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .map-width {
     width: 100%;
   }
+
 }
-;
