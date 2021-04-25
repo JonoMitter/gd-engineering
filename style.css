@@ -8,6 +8,18 @@ h4 {
   font-weight: bold;
 }
 
+.padding-left{
+  padding-left: 3%;
+}
+
+.padding-right{
+  padding-right: 3%;
+}
+
+.two-cols{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
 .section-container {
   padding: 64px;
 }
@@ -293,6 +305,12 @@ textarea {
     width: 90%;
     margin: auto;
   }
+  .two-cols{
+    display:inline;
+  }
+  .padding-left,.padding-right{
+    padding: 0;
+  }
 }
 
 /* Tablet and Small Desktop view */
@@ -302,7 +320,7 @@ textarea {
   }
   .service {
     margin: 5% 0 10% 0;
-    width: 350px;
+    padding:0;
   }
   #services {
     text-align: center;
@@ -310,12 +328,12 @@ textarea {
   .map-width {
     width: 100%;
   }
-}
-
-@media only screen and (max-width: 1320px) {
-  .service {
-    border: 0;
+  .two-cols-tablet{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-container {
+    padding: 35px;
   }
 }
-
 ;
