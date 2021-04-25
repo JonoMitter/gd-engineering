@@ -28,7 +28,9 @@ form {
 textarea {
   min-width: 100%;
   max-width: 100%;
-  min-height: 80px;
+  min-height: 85px;
+  resize: none;
+  line-height: 1.5;
 }
 
 div.form {
@@ -39,12 +41,13 @@ div.form {
   align-content: center;
 }
 
-a.blue-hover {
+a.mobile-nav-item {
   border-radius: 10px 10px 0 0;
   transition: background-color 0.1s linear;
+  transition: color 0.1s linear;
 }
 
-a.blue-hover:hover {
+a.mobile-nav-item:hover {
   color: white;
   background-color: var(--main-blue);
   border-radius: 10px 10px 0 0;
@@ -78,18 +81,21 @@ img.service-icon {
   color: white;
 }
 
-.section-container {
+.container {
   padding: 64px;
 }
 
+/* Used to seperate RHS Google Map from text  */
 .padding-left {
   padding-left: 3%;
 }
 
+/* Used to seperate LHS text from Google Map  */
 .padding-right {
   padding-right: 3%;
 }
 
+/* Divides the About Us section into two columns */
 .two-cols {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -111,7 +117,7 @@ img.service-icon {
   border-radius: 30px;
 }
 
-.grid5 {
+.five-cols {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
@@ -149,6 +155,9 @@ img.service-icon {
 
 .large-button {
   padding: 12px 24px !important;
+  min-width: 205px;
+  text-align: center;
+  font-size: 16px;
 }
 
 .button {
@@ -161,9 +170,11 @@ img.service-icon {
   border: var(--main-blue) 2px solid;
   font-weight: bold;
   transition: background-color 0.1s linear;
+  transition: color 0.1s linear;
 }
 
 .button-white, .form-button {
+  font-weight: bold;
   display: inline-block;
   padding: 8px 16px;
   text-decoration: none;
@@ -172,6 +183,7 @@ img.service-icon {
   border-radius: 8px;
   border: #ffffff 2px solid;
   transition: background-color 0.1s linear;
+  transition: color 0.1s linear;
 }
 
 .button-white:hover {
@@ -293,7 +305,7 @@ img.service-icon {
     height: 59px;
   }
   
-  .section-container {
+  .container {
     padding: 25px;
   }
 
@@ -319,7 +331,7 @@ img.service-icon {
     margin: 0;
   }
 
-  .grid5 {
+  .five-cols{
     display: inline-block;
   }
 
@@ -344,14 +356,16 @@ img.service-icon {
     padding: 0;
   }
 
-  .section-container {
+  .container {
     padding: 35px;
   }
   
-  .grid5 {
+  /* Turns off five column services for tablet */
+  .five-cols {
     display: inline-block;
   }
 
+  /* Turns on two column services for tablet */
   .two-cols-tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;

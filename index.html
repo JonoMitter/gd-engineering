@@ -19,12 +19,13 @@
         <div class="w3-bar w3-white w3-card" id="myNavbar">
             <div class="nav-container">
                 <a href="#home" class=" w3-wide"><img class="nav-logo" src="images/gd-logo2.png"></a>
+
                 <!-- Right-sided navbar links -->
                 <div class="w3-right w3-hide-small bottom-right">
-                    <a href="#services" class="w3-bar-item no-deco blue-hover bold">SERVICES</a>
-                    <a href="#work" class="w3-bar-item no-deco blue-hover bold"><i class="fa fa-th"></i> WORK</a>
-                    <a href="#contact" class="w3-bar-item no-deco blue-hover bold"><i
-                            class="fa fa-envelope"></i>CONTACT</a>
+                    <a href="#services" class="w3-bar-item no-deco mobile-nav-item bold">SERVICES</a>
+                    <a href="#work" class="w3-bar-item no-deco mobile-nav-item bold"><i class="fa fa-th"></i> WORK</a>
+                    <a href="#contact" class="w3-bar-item no-deco mobile-nav-item bold"><i
+                            class="fa fa-envelope"></i> CONTACT</a>
                 </div>
             </div>
 
@@ -48,20 +49,21 @@
 
     <!-- Header with full-height image -->
     <header class="bgimg-1 w3-display-container w3-grayscale-min min-height" id="home">
-        <div class="w3-display-left w3-text-white section-container">
+        <div class="w3-display-left w3-text-white container">
             <span class="w3-jumbo w3-hide-small padding-top">GD Manufacturing Engineers PTY Ltd.<br></span>
             <span class="w3-xxlarge w3-hide-large w3-hide-medium">GD Manufacturing Engineers PTY Ltd.<br></span>
             <span class="w3-large">//TODO come up with text for here i.e. "Let us create the solutions to your
                 engineering problems"<br></span>
-            <a href="#contact" class="button-white large-button w3-large w3-margin-top no-deco"><b>CONTACT
+            <a href="#contact" class="button-white large-button w3-margin-top no-deco"><b>CONTACT
                     US</b></a>
         </div>
     </header>
 
-    <!-- Promo Section -->
-    <div class="section-container">
+    <!-- About Us Section -->
+    <div class="container">
         <div class="two-cols">
 
+            <!-- LHS: About us text -->
             <div class="padding-right">
                 <h3>Geelong Owned and Operated</h3>
                 <p>//TODO come up with something to write here about GD and maybe its history
@@ -73,6 +75,7 @@
                 <p><a href="#work" class="button large-button"><i class="fa fa-th"> </i>VIEW OUR WORKS</a></p>
             </div>
 
+            <!-- RHS: Google Maps -->
             <div class="m6 mobile-center padding-left">
                 <div class="mapouter map-width">
                     <div class="gmap_canvas map-width"><iframe class="map-width" id="gmap_canvas"
@@ -88,9 +91,11 @@
     </div>
 
     <!-- Services Section -->
-    <div class="section-container blue" id="services">
+    <div class="container blue" id="services">
         <h3 class="w3-center full-width">SERVICES</h3>
-        <div class="w3-center grid5 two-cols-tablet">
+        <div class="w3-center five-cols two-cols-tablet">
+
+            <!-- Turning service -->
             <div class="service">
                 <img class="service-icon" src="images/turning.jpg" alt="Turning">
                 <h4>Turning</h4>
@@ -99,6 +104,7 @@
 
             <hr class="mobile-line">
             
+            <!-- Milling service -->
             <div class="service">
                 <img class="service-icon" src="images/milling.jpg" alt="Milling">
                 <h4>Milling</h4>
@@ -107,6 +113,7 @@
 
             <hr class="mobile-line">
 
+            <!-- Fabricating service -->
             <div class="service">
                 <img class="service-icon" src="images/fabrication.png" alt="Fabricating">
                 <h4>Fabricating</h4>
@@ -115,6 +122,7 @@
 
             <hr class="mobile-line">
 
+            <!-- Machining service -->
             <div class="service">
                 <img class="service-icon" src="images/machining.jpg" alt="Machining">
                 <h4>Machining</h4>
@@ -123,6 +131,7 @@
 
             <hr class="mobile-line">
 
+            <!-- Precision Engineering service -->
             <div class="service">
                 <img class="service-icon" src="images/precision_engineering.jpg" alt="Precision">
                 <h4>Precision Engineering</h4>
@@ -133,73 +142,67 @@
     </div>
 
     <!-- Work Section -->
-    <div class="section-container" id="work">
+    <div class="container" id="work">
         <h3 class="w3-center">OUR WORK</h3>
         <p class="w3-center w3-large">What we've done for people</p>
-
-        <div class="w3-row-padding" style="margin-top:64px">
+        <div class="w3-row-padding">
+            
+            <!-- TODO add images of past work -->
             <div class="w3-col l3 m6">
-                <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src="/w3images/tech_mic.jpg" style="width:100%" class="w3-hover-opacity"
                     alt="A microphone">
             </div>
+
             <div class="w3-col l3 m6">
-                <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src="/w3images/tech_phone.jpg" style="width:100%" class="w3-hover-opacity"
                     alt="A phone">
             </div>
+
             <div class="w3-col l3 m6">
-                <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src="/w3images/tech_drone.jpg" style="width:100%" class="w3-hover-opacity"
                     alt="A drone">
             </div>
+
             <div class="w3-col l3 m6">
-                <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src="/w3images/tech_sound.jpg" style="width:100%" class="w3-hover-opacity"
                     alt="Soundbox">
             </div>
         </div>
 
         <div class="w3-row-padding w3-section">
             <div class="w3-col l3 m6">
-                <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src="/w3images/tech_tablet.jpg" style="width:100%" class="w3-hover-opacity"
                     alt="A tablet">
             </div>
+
             <div class="w3-col l3 m6">
-                <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                <img src="/w3images/tech_camera.jpg" style="width:100%" class="w3-hover-opacity"
                     alt="A camera">
             </div>
+
             <div class="w3-col l3 m6">
-                <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)"
+                <img src="/w3images/tech_typewriter.jpg" style="width:100%"
                     class="w3-hover-opacity" alt="A typewriter">
             </div>
+
             <div class="w3-col l3 m6">
-                <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)"
+                <img src="/w3images/tech_tableturner.jpg" style="width:100%"
                     class="w3-hover-opacity" alt="A tableturner">
             </div>
         </div>
     </div>
 
-    <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
-            title="Close Modal Image">×</span>
-        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-            <img id="img01" class="w3-image">
-            <p id="caption" class="w3-opacity w3-large"></p>
-        </div>
-    </div>
-
     <!-- Contact Section -->
-    <div class="section-container blue" id="contact">
+    <div class="container blue" id="contact">
         <h3 class="w3-center">CONTACT</h3>
         <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
         <div class="form">
             <form action="/action_page.php" target="_blank">
                 <div class="form">
-                    <p><input class="w3-input w3-border" type="text" placeholder="Name e.g. John Smith" required
-                            name="Name"></p>
-                    <p><input class="w3-input w3-border" type="text" placeholder="Email e.g. johnsmith@gmail.com"
-                            required name="Email"></p>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Name e.g. John Smith" required name="Name"></p>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Email e.g. johnsmith@gmail.com" required name="Email"></p>
                     <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-                    <p><textarea class="w3-input w3-border" type="text" placeholder="Message" required
-                            name="Message"></textarea></p>
+                    <p><textarea class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></textarea></p>
                     <p>
                         <button class="form-button large-button" type="submit">
                             <i class="fa fa-paper-plane"></i> SEND MESSAGE
@@ -221,18 +224,10 @@
                 <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>gdeng@pipeline.com.au
             </p>
         </div>
-        <p>&copy; 2021 GD Manufacturing Engineers PTY Ltd. </a></p>
+        <p>&copy; 2021 GD Manufacturing Engineers PTY Ltd.</p>
     </footer>
 
     <script>
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
         // Toggle between showing and hiding the sidebar when clicking the menu icon
         var mySidebar = document.getElementById("mySidebar");
 
