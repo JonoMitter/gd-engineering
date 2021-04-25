@@ -17,7 +17,7 @@ h4 {
 }
 
 .two-cols{
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .section-container {
