@@ -1,290 +1,325 @@
 :root {
-    --main-blue: #364c95;
-    --main-orange: #f79c63;
+  --main-blue: #364c95;
+  --main-orange: #f79c63;
 }
 
 .service {
-    background: none;
-    color: white;
-    margin: 2%;
-    padding: 10%;
-    border-radius: 5%;
+  background: none;
+  color: white;
+  margin: 2%;
+  padding: 10%;
+  border-radius: 5%;
 }
 
 .service-icon {
-    min-height: 150px;
-    min-width: 150px;
-    height: 180px;
-    width: 180px;
-    border-radius: 30px;
-    /* border: solid rgb(255, 255, 255) 2px; */
+  min-height: 150px;
+  min-width: 150px;
+  height: 180px;
+  width: 180px;
+  border-radius: 30px;
+  /* border: solid rgb(255, 255, 255) 2px; */
+}
+
+hr.mobile-line {
+  display: none;
 }
 
 img.service-icon {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .grid5 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .nav-logo {
-    padding: 5px;
-    height: 80px;
+  padding: 5px;
+  height: 80px;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 div.form {
-    margin: 0 auto;
-    width: 85%;
-    min-width: 550px;
-    display: block;
-    align-content: center;
+  margin: 0 auto;
+  width: 85%;
+  min-width: 550px;
+  display: block;
+  align-content: center;
 }
 
 .padding-64-16 {
-    padding: 64px 16px;
+  padding: 64px 16px;
 }
 
 form {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    width: 100%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 100%;
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
 }
 
 .bottom-right {
-    position: absolute;
-    bottom: 0;
-    right: 17.5%;
+  position: absolute;
+  bottom: 0;
+  right: 17.5%;
 }
 
 .text-left {
-    text-align: left;
-    margin: auto;
-    display: inline-block;
+  text-align: left;
+  margin: auto;
+  display: inline-block;
 }
 
 .no-deco {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .orange {
-    background-color: #f79c6325;
+  background-color: #f79c6325;
 }
 
 .blue {
-    background-color: var(--main-blue);
-    color: white;
+  background-color: var(--main-blue);
+  color: white;
 }
 
 .button {
-    display: inline-block;
-    padding: 8px 16px;
-    text-decoration: none;
-    background: none;
-    color: #364c95;
-    border-radius: 8px;
-    border: var(--main-blue) 2px solid;
-    font-weight: bold;
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  background: none;
+  color: #364c95;
+  border-radius: 8px;
+  border: var(--main-blue) 2px solid;
+  font-weight: bold;
+  transition: background-color 0.1s linear;
 }
 
-.button-white {
-    display: inline-block;
-    padding: 8px 16px;
-    text-decoration: none;
-    background-color: none;
-    color: #ffffff;
-    border-radius: 8px;
-    border: #ffffff 2px solid;
+.button-white,
+.formButton {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  background: none;
+  color: #ffffff;
+  border-radius: 8px;
+  border: #ffffff 2px solid;
+  transition: background-color 0.1s linear;
 }
 
 .button-white:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.formButton:hover {
+  background-color: rgb(255, 255, 255);
+  color: var(--main-blue);
+  cursor: pointer;
 }
 
 .button:hover {
-    background-color: var(--main-blue);
-    color: white;
-    cursor: pointer;
+  background-color: var(--main-blue);
+  color: white;
+  cursor: pointer;
 }
 
+a.blue-hover {
+  border-radius: 10px 10px 0 0;
+  transition: background-color 0.1s linear;
+}
 a.blue-hover:hover {
-    color: white;
-    background-color: var(--main-blue);
-    border-radius: 10px 10px 0 0;
+  color: white;
+  background-color: var(--main-blue);
+  border-radius: 10px 10px 0 0;
 }
 
-body, h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway", sans-serif
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
 }
 
-body, html {
-    height: 100%;
-    line-height: 1.8;
+body,
+html {
+  height: 100%;
+  line-height: 1.8;
 }
 
 .bgimg-1 {
-    background-position: center;
-    background-size: cover;
-    background-image: linear-gradient(to bottom, rgba(54, 76, 149, 0.50), rgba(255, 98, 0, 0.95)), url('images/background.jpg');
-    min-height: 93%;
-    box-shadow: inset 0 0 0 2000px rgba(0, 16, 39, 0.7);
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(54, 76, 149, 0.5),
+      rgba(255, 98, 0, 0.95)
+    ),
+    url("images/background.jpg");
+  min-height: 93%;
+  box-shadow: inset 0 0 0 2000px rgba(0, 16, 39, 0.7);
 }
 
 .w3-bar .w3-button {
-    padding: 16px;
+  padding: 16px;
 }
 
 #map {
-    height: 200px;
-    width: 400px;
+  height: 200px;
+  width: 400px;
 }
 
 .padding-top {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 .padding {
-    padding: 48px;
+  padding: 48px;
 }
 
 .min-height {
-    min-height: 500px;
-    height: 93.5%;
+  min-height: 500px;
+  height: 93.5%;
 }
 
 .container {
-    min-width: 640px;
+  min-width: 640px;
 }
 
-textarea{
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 80px;
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 80px;
 }
 
 .side-black {
-    color: #fff!important;
-    background-color: rgba(0, 0, 0, 0.9)!important;
+  color: #fff !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
 .side-button {
-    border: none;
-    display: inline-block;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .side-button:hover {
-    background-color: rgb(36, 36, 36);
+  background-color: rgb(36, 36, 36);
 }
 
 .nav-margin {
-    margin-top: 59px;
+  margin-top: 59px;
 }
 
 .mapouter {
-    display: inline-block;
-    text-align: right;
+  display: inline-block;
+  text-align: right;
 }
 .gmap_canvas {
-    overflow: hidden;
-    background: none !important;
+  overflow: hidden;
+  background: none !important;
 }
 
-.map-width{
-    height: 500px;
-    width: 100%;
+.map-width {
+  height: 500px;
+  width: 100%;
 }
 
-#services{
-    padding-bottom: 3%;
+#services {
+  padding-bottom: 3%;
 }
 
-.burger:hover, .burger:focus{
-    background: #364c952f;
+.burger:hover,
+.burger:focus {
+  background: #364c952f;
 }
 
-.burger{
-    padding: 16px !important;
+.burger {
+  padding: 16px !important;
 }
 
 @media only screen and (max-width: 600px) {
-    .container {
-        display: inline;
-    }
-    div.form {
-        width: 100%;
-        min-width: 200px;
-    }
-    .nav-logo {
-        height: 59px;
-    }
-    .mobile-padding {
-        padding: 20px;
-    }
-    .bgimg-1 {
-        height: 93%;
-        min-height: 700px;
-    }
-    .map-width{ 
-        width: 100%;
-    }
-    .mobile-center{
-        text-align: center;
-    }
-    .service {
-        width: 80vw;
-    }
-    .grid5 {
-        display: inline-block;
-    }
-    #services {
-        text-align: center;
-    }
+  .container {
+    display: inline;
+  }
+  div.form {
+    width: 100%;
+    min-width: 200px;
+  }
+  .nav-logo {
+    height: 59px;
+  }
+  .mobile-padding {
+    padding: 20px;
+  }
+  .bgimg-1 {
+    height: 93%;
+    min-height: 700px;
+  }
+  .map-width {
+    width: 100%;
+  }
+  .mobile-center {
+    text-align: center;
+  }
+  .service {
+    width: 80vw;
+  }
+  .grid5 {
+    display: inline-block;
+  }
+  #services {
+    text-align: center;
+  }
+  hr.mobile-line {
+    display: block;
+    border-top: 2px solid white;
+    border-radius: 10%;
+    /* width: 90%; */
+  }
 }
 
 @media only screen and (max-width: 1320px) and (min-width: 600px) {
-    .grid5 {
-        display: inline-block;
-    }
-    .service {
-        /* margin-top: 5%; */
-        margin: 5% 0 10% 0;
-        width: 350px;
-        /* height: 450px; */
-    }
-    #services {
-        text-align: center;
-    }
-    .map-width{
-        width: 100%;
-    }
+  .grid5 {
+    display: inline-block;
+  }
+  .service {
+    /* margin-top: 5%; */
+    margin: 5% 0 10% 0;
+    width: 350px;
+    /* height: 450px; */
+  }
+  #services {
+    text-align: center;
+  }
+  .map-width {
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width: 1320px){
-    .service{
-        border: 0;
-    }
-}
-
-;
+@media only screen and (max-width: 1320px) {
+  .service {
+    border: 0;
+  }
+} ;
