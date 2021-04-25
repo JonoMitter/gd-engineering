@@ -4,12 +4,11 @@
 }
 
 .service {
-    background-color: #364c9517;
-    /* color: white; */
+    background: none;
+    color: white;
     margin: 2%;
     padding: 10%;
     border-radius: 5%;
-    border: solid rgb(255, 255, 255) 2px;
 }
 
 .service-icon {
@@ -18,7 +17,7 @@
     height: 180px;
     width: 180px;
     border-radius: 30px;
-    border: solid rgb(255, 255, 255) 2px;
+    /* border: solid rgb(255, 255, 255) 2px; */
 }
 
 img.service-icon {
@@ -86,7 +85,8 @@ form {
 }
 
 .blue {
-    background-color: #364c9517;
+    background-color: var(--main-blue);
+    color: white;
 }
 
 .button {
@@ -123,7 +123,7 @@ form {
 
 a.blue-hover:hover {
     color: white;
-    background-color: #364c9594;
+    background-color: var(--main-blue);
     border-radius: 10px 10px 0 0;
 }
 
@@ -271,13 +271,19 @@ textarea{
         /* margin-top: 5%; */
         margin: 5% 0 10% 0;
         width: 350px;
-        height: 450px;
+        /* height: 450px; */
     }
     #services {
         text-align: center;
     }
     .map-width{
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1320px){
+    .service{
+        border: 0;
     }
 }
 
