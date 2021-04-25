@@ -294,8 +294,8 @@ textarea {
   }
   hr.mobile-line {
     display: block;
-    border-top: 2px solid white;
-    border-radius: 10%;
+    border-top: 3px solid white;
+    border-radius: 70px;
     /* width: 90%; */
   }
 }
