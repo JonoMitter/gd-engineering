@@ -128,8 +128,8 @@ img.service-icon {
 }
 
 .nav-logo {
-  padding: 5px;
   height: 80px;
+  padding: 5px 5px 5px 0;
 }
 
 .bold {
