@@ -157,6 +157,7 @@ img.service-icon {
   min-width: 205px;
   text-align: center;
   font-size: 16px;
+  font-weight: bold;
 }
 
 .button {
@@ -170,6 +171,13 @@ img.service-icon {
   font-weight: bold;
   transition: background-color 0.1s linear;
   transition: color 0.1s linear;
+}
+
+.button:hover {
+  background-color: var(--main-blue);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .button-white, .form-button {
@@ -194,12 +202,6 @@ img.service-icon {
 .form-button:hover {
   background-color: rgb(255, 255, 255);
   color: var(--main-blue);
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: var(--main-blue);
-  color: white;
   cursor: pointer;
 }
 
@@ -317,8 +319,8 @@ img.service-icon {
   }
   
   .bgimg-1 {
-    height: 80%;
-    min-height: 700px;
+    height: calc(100vh - 59px);
+    min-height: 500px;
     margin-top: 59px;
   }
 
