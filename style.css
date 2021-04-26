@@ -229,8 +229,12 @@ img.service-icon {
 }
 
 .burger {
-  height: 59px;
-  padding: 16px !important;
+  height: 40px;
+  width: 40px !important;
+  padding: 9px !important;
+  margin: 9.5px !important;
+  border-radius: 100px;
+  text-align: center;
 }
 
 .burger:hover, .burger:focus {
