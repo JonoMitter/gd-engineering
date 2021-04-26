@@ -35,6 +35,8 @@ textarea {
 
 footer p{
   font-size: 25px;
+  text-align: center;
+  margin: 15px 0;
 }
 footer a{
   text-decoration: none;
@@ -308,7 +310,6 @@ p.copyright{
   footer p{
     font-size: 18px;
     line-height: 2;
-    text-align: center;
   }
 
   footer a{
