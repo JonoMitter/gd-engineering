@@ -346,7 +346,7 @@ p.copyright{
   
   .bgimg-1 {
     height: calc(100vh - 59px);
-    min-height: 500px;
+    min-height: 400px;
     margin-top: 59px;
   }
 
