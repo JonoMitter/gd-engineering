@@ -240,12 +240,13 @@ p.copyright{
 }
 
 .burger {
-  height: 40px;
-  width: 40px !important;
-  padding: 9px !important;
-  margin: 9.5px !important;
+  height: 55px;
+  width: 55px !important;
+  padding: 15px !important;
+  margin: 2px !important;
   border-radius: 100px;
   text-align: center;
+  line-height: 2;
 }
 
 .burger:hover, .burger:focus {
