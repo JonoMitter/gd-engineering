@@ -34,7 +34,7 @@ textarea {
 }
 
 footer p{
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   margin: 15px 0;
 }
@@ -308,7 +308,6 @@ p.copyright{
   }
 
   footer p{
-    font-size: 20px;
     line-height: 2;
   }
 
