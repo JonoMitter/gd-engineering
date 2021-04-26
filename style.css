@@ -33,6 +33,9 @@ textarea {
   line-height: 1.5;
 }
 
+footer p{
+  font-size: 25px;
+}
 footer a{
   text-decoration: none;
 }
@@ -73,6 +76,10 @@ img.service-icon {
 #map {
   height: 200px;
   width: 400px;
+}
+
+p.copyright{
+  margin-top: 0;
 }
 
 .blue {
@@ -295,6 +302,16 @@ img.service-icon {
   div.form {
     width: 100%;
     min-width: 200px;
+  }
+
+  footer p{
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+  }
+
+  footer a{
+    padding: 4px;
   }
 
   hr.mobile-line {
