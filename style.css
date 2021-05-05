@@ -3,6 +3,10 @@
   --main-orange: #f79c63;
 }
 
+html{
+  font-size: 16px;
+}
+
 body, html {
   height: 100%;
   line-height: 1.8;
@@ -10,11 +14,32 @@ body, html {
 
 body, h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
+  margin-top: 0;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 1.5rem;
+}
+
+h3{
+  font-size: 2.5rem;
 }
 
 h4 {
-  font-size: 20;
+  font-size: 1.7rem;
   font-weight: bold;
+}
+
+p{
+  font-size: 1.1rem;
+}
+
+a{
+  text-decoration: none;
 }
 
 form {
@@ -34,10 +59,11 @@ textarea {
 }
 
 footer p{
-  font-size: 20px;
+  font-size: 1.2rem;
   text-align: center;
   margin: 15px 0;
 }
+
 footer a{
   text-decoration: none;
 }
@@ -49,13 +75,14 @@ div.form {
   align-content: center;
 }
 
-a.mobile-nav-item {
+a.nav-item {
   border-radius: 10px 10px 0 0;
   transition: background-color 0.1s linear;
   transition: color 0.1s linear;
+  font-size: 1.2rem;
 }
 
-a.mobile-nav-item:hover {
+a.nav-item:hover {
   color: white;
   background-color: var(--main-blue);
   border-radius: 10px 10px 0 0;
@@ -72,7 +99,6 @@ img.service-icon {
 
 #services {
   text-align: center;
-  padding-bottom: 3%;
 }
 
 #map {
@@ -90,12 +116,13 @@ p.copyright{
 }
 
 .container {
-  padding: 64px;
+  padding: 4rem;
 }
 
 .nav-container {
-  padding: 0 64px;
+  /* padding: 0 64px; */
   min-width: 640px;
+  padding: 0 4rem;
 }
 
 /* Used to seperate RHS Google Map from text  */
@@ -123,9 +150,19 @@ p.copyright{
 .service {
   background: none;
   color: white;
-  margin: 2%;
-  padding: 10%;
+  margin: 10%;
+  /* padding: 5%; */
   border-radius: 5%;
+}
+
+.left-service{
+  /* padding-left: 0 !important; */
+  margin-left: 0 !important;
+}
+
+.right-service{
+  /* padding-right: 0 !important; */
+  margin-right: 0 !important;
 }
 
 .service p {
@@ -133,11 +170,13 @@ p.copyright{
 }
 
 .service-icon {
-  min-height: 150px;
-  min-width: 150px;
-  height: 180px;
-  width: 180px;
+  /* min-height: 150px;
+  min-width: 150px; */
   border-radius: 30px;
+
+  width: 100%;
+  height: 12rem;
+  object-fit: cover; /* Equivalent of the background-size: cover; of a background-image */
 }
 
 .nav-logo {
@@ -152,7 +191,7 @@ p.copyright{
 .bottom-right {
   position: absolute;
   bottom: 0;
-  right: 17.5%;
+  right: 4rem;
 }
 
 .text-left {
@@ -165,57 +204,42 @@ p.copyright{
   text-decoration: none;
 }
 
-.large-button {
-  padding: 12px 24px !important;
-  min-width: 205px;
-  text-align: center;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.button {
-  display: inline-block;
-  padding: 8px 16px;
+.button{
+  padding: 1em 2em !important;
+  font-size: 1.2rem;
   text-decoration: none;
-  background: none;
-  color: #364c95;
-  border-radius: 8px;
-  border: var(--main-blue) 2px solid;
   font-weight: bold;
+  border-radius: 8px;
+  
   transition: background-color 0.1s linear;
   transition: color 0.1s linear;
+
+  background: none;
+  color: var(--main-blue);
+  border: var(--main-blue) 2px solid;
 }
 
 .button:hover {
   background-color: var(--main-blue);
   color: white;
   cursor: pointer;
-  font-weight: bold;
 }
 
-.button-white, .form-button {
-  font-weight: bold;
-  display: inline-block;
-  padding: 8px 16px;
-  text-decoration: none;
+.button-white, .button-contact-us{
   background: none;
   color: #ffffff;
-  border-radius: 8px;
   border: #ffffff 2px solid;
-  transition: background-color 0.1s linear;
-  transition: color 0.1s linear;
 }
 
 .button-white:hover {
   background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  color: var(--main-blue);
   cursor: pointer;
 }
 
-.form-button:hover {
+.button-contact-us:hover{
   background-color: rgb(255, 255, 255);
-  color: var(--main-blue);
-  cursor: pointer;
+  color:rgba(0, 0, 0);
 }
 
 .w3-bar .w3-button {
@@ -302,6 +326,39 @@ p.copyright{
  *  (Screen Width <= 601px) 
  */
 @media only screen and (max-width: 601px) {
+  html{
+    font-size: 10px;
+    text-align: center;
+  }
+
+  #myNavbar{
+    text-align: left;
+  }
+
+  h1{
+    font-size: 3.5rem;
+  }
+
+  h3{
+    font-size: 3rem;
+  }
+
+  h4{
+    font-size: 2.6rem;
+  }
+
+  p{
+    font-size: 1.7rem;
+  }
+
+  .large-button, .button{
+    font-size: 30px !important;
+  }
+
+  #services h4{
+    margin-bottom: 0;
+  }
+
   div.form {
     width: 100%;
     min-width: 200px;
@@ -309,6 +366,7 @@ p.copyright{
 
   footer p{
     line-height: 2;
+    font-size: 1.5rem;
   }
 
   footer a{
@@ -326,8 +384,12 @@ p.copyright{
     padding: 0;
   }
 
+  .mobile-center{
+    text-align: center;
+  }
+
   .container {
-    padding: 26px;
+    padding: 2rem;
   }
 
   .nav-container {
@@ -345,7 +407,7 @@ p.copyright{
   
   .bgimg-1 {
     height: calc(100vh - 59px);
-    min-height: 400px;
+    min-height: 500px;
     margin-top: 59px;
   }
 
@@ -359,11 +421,16 @@ p.copyright{
 
   .service {
     width: 80vw;
-    margin: 0;
+    margin: 2em 0;
   }
 
   .five-cols, .two-cols {
     display: inline-block;
+  }
+  .button{
+    font-size: 20px !important;
+    /* margin: 1em; */
+    /* margin-top: 0; */
   }
 }
 
@@ -382,7 +449,7 @@ p.copyright{
   }
 
   .service {
-    margin: 5% 0 10% 0;
+    margin: 10% !important;
     padding: 0;
   }
 

@@ -22,9 +22,9 @@
 
                 <!-- Right-sided navbar links -->
                 <div class="w3-right w3-hide-small bottom-right">
-                    <a href="#services" class="w3-bar-item no-deco mobile-nav-item bold">SERVICES</a>
-                    <a href="#work" class="w3-bar-item no-deco mobile-nav-item bold"><i class="fa fa-th"></i> WORK</a>
-                    <a href="#contact" class="w3-bar-item no-deco mobile-nav-item bold"><i class="fa fa-envelope"></i>
+                    <a href="#services" class="w3-bar-item no-deco nav-item bold">SERVICES</a>
+                    <a href="#work" class="w3-bar-item no-deco nav-item bold"><i class="fa fa-th"></i> WORK</a>
+                    <a href="#contact" class="w3-bar-item no-deco nav-item bold"><i class="fa fa-envelope"></i>
                         CONTACT</a>
                 </div>
             </div>
@@ -49,12 +49,14 @@
     <!-- Header with full-height image -->
     <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
         <div class="w3-display-left w3-text-white container">
-            <span class="w3-jumbo w3-hide-small padding-top">GD Manufacturing Engineers PTY Ltd.<br></span>
-            <span class="w3-xxlarge w3-hide-large w3-hide-medium">GD Manufacturing Engineers PTY Ltd.<br></span>
-            <span class="w3-large">//TODO come up with text for here i.e. "Let us create the solutions to your
-                engineering problems"<br></span>
-            <a href="#contact" class="button-white large-button w3-margin-top no-deco">CONTACT
+            <h1 class="w3-hide-small padding-top">GD Manufacturing Engineers<br></h1>
+            <h1 class="w3-hide-large w3-hide-medium">GD Manufacturing Engineers<br></h1>
+            <h2>//TODO come up with text for here i.e. "Let us create the solutions to your
+                engineering problems"<br></h2>
+                <br>
+            <button class="button button-contact-us"><a href="#contact" >CONTACT
                 US</a>
+            </button>
         </div>
     </header>
 
@@ -65,13 +67,13 @@
             <!-- LHS: About us text -->
             <div class="padding-right">
                 <h3>Geelong Owned and Operated</h3>
-                <p>//TODO come up with something to write here about GD and maybe its history
+                <p>//TODO come up with something to write here about GD and maybe its history</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices sem eget est ultrices, et
                     tincidunt sapien pretium. Integer ultricies massa at justo cursus varius. Curabitur maximus finibus
-                    pellentesque. Morbi diam odio, elementum semper finibus pulvinar, tincidunt vitae ligula. Curabitur
-                    et iaculis tellus. Nullam eget volutpat purus. Curabitur elementum nisl id quam tempor, ut porta
-                    neque feugiat. </p>
-                <p><a href="#work" class="button large-button"><i class="fa fa-th"> </i>VIEW OUR WORKS</a></p>
+                    pellentesque.</p>
+                <button class="button"><a href="#work"><i class="fa fa-th"> </i>OUR WORK</a></button>
+                <br>
+                <br>
             </div>
 
             <!-- RHS: Google Maps -->
@@ -90,15 +92,14 @@
     </div>
 
     <!-- Services Section -->
-    <div class="container blue" id="services">
+    <div class="blue container" id="services">
         <h3 class="w3-center full-width">SERVICES</h3>
         <div class="w3-center five-cols two-cols-tablet">
-
             <!-- Turning service -->
-            <div class="service">
+            <div class="left-service service">
                 <img class="service-icon" src="images/turning.jpg" alt="Turning">
                 <h4>Turning</h4>
-                <p> //TODO talk about Turning</p>
+                <!-- <p> //TODO talk about Turning</p> -->
             </div>
 
             <hr class="mobile-line">
@@ -107,7 +108,7 @@
             <div class="service">
                 <img class="service-icon" src="images/milling.jpg" alt="Milling">
                 <h4>Milling</h4>
-                <p>//TODO talk about Milling</p>
+                <!-- <p>//TODO talk about Milling</p> -->
             </div>
 
             <hr class="mobile-line">
@@ -116,7 +117,7 @@
             <div class="service">
                 <img class="service-icon" src="images/fabrication.png" alt="Fabricating">
                 <h4>Fabricating</h4>
-                <p>//TODO talk about Fabricating</p>
+                <!-- <p>//TODO talk about Fabricating</p> -->
             </div>
 
             <hr class="mobile-line">
@@ -125,18 +126,17 @@
             <div class="service">
                 <img class="service-icon" src="images/machining.jpg" alt="Machining">
                 <h4>Machining</h4>
-                <p>//TODO talk about Machining</p>
+                <!-- <p>//TODO talk about Machining</p> -->
             </div>
 
             <hr class="mobile-line">
 
             <!-- Precision Engineering service -->
-            <div class="service">
+            <div class="right-service service">
                 <img class="service-icon" src="images/precision_engineering.jpg" alt="Precision">
                 <h4>Precision Engineering</h4>
-                <p>//TODO talk about Precision Engineering</p>
+                <!-- <p>//TODO talk about Precision Engineering</p> -->
             </div>
-
         </div>
     </div>
 
@@ -198,11 +198,11 @@
                     <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
                     <p><textarea class="w3-input w3-border" type="text" placeholder="Message" required
                             name="Message"></textarea></p>
-                    <p>
-                        <button class="form-button large-button" type="submit">
+                    <div class="mobile-center">
+                        <button class="button button-white" type="submit">
                             <i class="fa fa-paper-plane"></i> SEND MESSAGE
                         </button>
-                    </p>
+                    </div>
                 </div>
             </form>
         </div>
