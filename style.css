@@ -273,11 +273,13 @@ p.copyright{
   border-radius: 100px;
   text-align: center;
   line-height: 2;
+  transition: background-color 0.25s linear;
+  transition: color 0.25s linear;
+  transition: transform 0.25s linear;
 }
 
 .burger:hover, .burger:focus {
-  background: var(--main-blue);
-  color: white;
+  transform: rotate(-90deg);
 }
 
 .side-button {
