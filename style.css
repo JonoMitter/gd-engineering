@@ -382,7 +382,7 @@ p.copyright{
   hr.mobile-line {
     display: block;
     border-top: 2px solid white;
-    width: 90%;
+    width: 65%;
     margin: auto;
   }
 
@@ -434,13 +434,17 @@ p.copyright{
     margin: 2em 0;
   }
 
+  .service-icon{
+    width: 60%;
+    height: 60%;
+  }
+
   .five-cols, .two-cols {
     display: inline-block;
   }
   .button{
     font-size: 20px !important;
-    /* margin: 1em; */
-    /* margin-top: 0; */
+    width: 100%;
   }
 }
 
