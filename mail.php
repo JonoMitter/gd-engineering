@@ -4,7 +4,7 @@
     $message = $_POST['Message'];
     $formcontent="From: $name \n Message: $message";
     $recipient = "jonomitter@outlook.com";
-    $subject = "Contact Form";
+    $subject = $_POST['Subject'];
     $mailheader = "From: $email \r\n";
     mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
     echo "Thank You!";
