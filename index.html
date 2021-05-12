@@ -1,347 +1,250 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>GD Manufacturing Engineers</title>
-    <link rel="SHORTCUT ICON" href="images/gd-logo2.png" type="image/x-icon" />
-    <link rel="ICON" href="images/gd-logo2.png" type="image/ico" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Raleway"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-      <div class="w3-bar w3-white w3-card" id="myNavbar">
-        <div class="nav-container">
-          <a href="#home" class="w3-wide"
-            ><img class="nav-logo" src="images/gd-logo2.png"
-          /></a>
+<head>
+  <title>GD Manufacturing Engineers</title>
+  <link rel="SHORTCUT ICON" href="images/gd-logo2.png" type="image/x-icon" />
+  <link rel="ICON" href="images/gd-logo2.png" type="image/ico" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-          <!-- Right-sided navbar links -->
-          <div class="w3-right w3-hide-small bottom-right">
-            <a href="#services" class="w3-bar-item no-deco nav-item bold"
-              >SERVICES</a
-            >
-            <a href="#work" class="w3-bar-item no-deco nav-item bold"
-              ><i class="fa fa-th"></i> WORK</a
-            >
-            <a href="#contact" class="w3-bar-item no-deco nav-item bold"
-              ><i class="fa fa-envelope"></i> CONTACT</a
-            >
-          </div>
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <div class="nav-container">
+        <a href="#home" class="w3-wide"><img class="nav-logo" src="images/gd-logo2.png" /></a>
+
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small bottom-right">
+          <a href="#services" class="w3-bar-item no-deco nav-item bold">SERVICES</a>
+          <a href="#work" class="w3-bar-item no-deco nav-item bold"><i class="fa fa-th"></i> WORK</a>
+          <a href="#contact" class="w3-bar-item no-deco nav-item bold"><i class="fa fa-envelope"></i> CONTACT</a>
         </div>
-
-        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-        <a
-          href="javascript:void(0)"
-          class="w3-bar-item w3-right w3-hide-large w3-hide-medium burger"
-          onclick="w3_open()"
-        >
-          <i class="fa fa-bars"></i>
-        </a>
       </div>
+
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-right w3-hide-large w3-hide-medium burger" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
+  </div>
 
-    <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav
-      class="w3-sidebar w3-bar-block side-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
-      style="display: none"
-      id="mySidebar"
-    >
-      <a
-        href="javascript:void(0)"
-        onclick="w3_close()"
-        class="w3-bar-item side-button close-button"
-        >x</a
-      >
-      <a href="#services" onclick="w3_close()" class="w3-bar-item side-button"
-        >SERVICES</a
-      >
-      <a href="#work" onclick="w3_close()" class="w3-bar-item side-button"
-        >WORK</a
-      >
-      <a href="#contact" onclick="w3_close()" class="w3-bar-item side-button"
-        >CONTACT</a
-      >
-    </nav>
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block side-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display: none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item side-button close-button">x</a>
+    <a href="#services" onclick="w3_close()" class="w3-bar-item side-button">SERVICES</a>
+    <a href="#work" onclick="w3_close()" class="w3-bar-item side-button">WORK</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item side-button">CONTACT</a>
+  </nav>
 
-    <!-- Header with full-height image -->
-    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-      <div class="w3-display-left w3-text-white container">
-        <h1 class="w3-hide-small padding-top">
-          GD Manufacturing Engineers<br />
-        </h1>
-        <h1 class="w3-hide-large w3-hide-medium">
-          GD Manufacturing Engineers<br />
-        </h1>
-        <h2>
-          //TODO come up with text for here i.e. "Let us create the solutions to
-          your engineering problems"<br />
-        </h2>
-        <br />
-        <!-- <button class="button button-contact-us">
+  <!-- Header with full-height image -->
+  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-left w3-text-white container">
+      <h1 class="w3-hide-small padding-top">
+        GD Manufacturing Engineers<br />
+      </h1>
+      <h1 class="w3-hide-large w3-hide-medium">
+        GD Manufacturing Engineers<br />
+      </h1>
+      <h2>
+        //TODO come up with text for here i.e. "Let us create the solutions to
+        your engineering problems"<br />
+      </h2>
+      <br />
+      <!-- <button class="button button-contact-us">
           <a href="#contact">CONTACT US</a>
         </button> -->
-        <a href="#contact" class="button button-contact-us">
-            CONTACT US
-        </a>
-      </div>
-    </header>
+      <a href="#contact" class="button button-contact-us">
+        CONTACT US
+      </a>
+    </div>
+  </header>
 
-    <!-- About Us Section -->
-    <div class="container">
-      <div class="two-cols">
-        <!-- LHS: About us text -->
-        <div class="padding-right">
-          <h3>Geelong Owned and Operated</h3>
-          <p>
-            //TODO come up with something to write here about GD and maybe its
-            history
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-            ultrices sem eget est ultrices, et tincidunt sapien pretium. Integer
-            ultricies massa at justo cursus varius. Curabitur maximus finibus
-            pellentesque.
-          </p>
-          <!-- <button class="button">
+  <!-- About Us Section -->
+  <div class="container">
+    <div class="two-cols">
+      <!-- LHS: About us text -->
+      <div class="padding-right">
+        <h3>Geelong Owned and Operated</h3>
+        <p>
+          //TODO come up with something to write here about GD and maybe its
+          history
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+          ultrices sem eget est ultrices, et tincidunt sapien pretium. Integer
+          ultricies massa at justo cursus varius. Curabitur maximus finibus
+          pellentesque.
+        </p>
+        <!-- <button class="button">
             <a href="#work"><i class="fa fa-th"> </i>OUR WORK</a>
           </button> -->
-          <a href="#work" class="button">
-              <i class="fa fa-th"> </i>OUR WORK
-          </a>
-          <br />
-          <br />
-        </div>
+        <a href="#work" class="button">
+          <i class="fa fa-th"> </i>OUR WORK
+        </a>
+        <br />
+        <br />
+      </div>
 
-        <!-- RHS: Google Maps -->
-        <div class="m6 mobile-center padding-left">
-          <div class="mapouter map-width">
-            <div class="gmap_canvas map-width">
-              <iframe
-                class="map-width"
-                id="gmap_canvas"
-                src="https://maps.google.com/maps?q=21/23%20Cowie%20St,%20North%20Geelong%20VIC%203215&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                frameborder="0"
-                scrolling="no"
-                marginheight="0"
-                marginwidth="0"
-              ></iframe
-              ><a href="https://fmovies2.org">fmovies</a><br />
-            </div>
+      <!-- RHS: Google Maps -->
+      <div class="m6 mobile-center padding-left">
+        <div class="mapouter map-width">
+          <div class="gmap_canvas map-width">
+            <iframe class="map-width" id="gmap_canvas"
+              src="https://maps.google.com/maps?q=21/23%20Cowie%20St,%20North%20Geelong%20VIC%203215&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+              href="https://fmovies2.org">fmovies</a><br />
           </div>
-          <br />
-          <i>21/23 Cowie St, North Geelong VIC 3215</i>
         </div>
+        <br />
+        <i>21/23 Cowie St, North Geelong VIC 3215</i>
       </div>
     </div>
+  </div>
 
-    <!-- Services Section -->
-    <div class="blue container" id="services">
-      <h3 class="w3-center full-width">SERVICES</h3>
-      <div class="w3-center five-cols two-cols-tablet">
+  <!-- Services Section -->
+  <div class="blue container" id="services">
+    <h3 class="w3-center full-width">SERVICES</h3>
+    <div class="w3-center five-cols two-cols-tablet">
 
-        <!-- Turning service -->
-        <div class="left-service service">
-          <img class="service-icon" src="images/turning.jpg" alt="Turning" />
-          <h4>Turning</h4>
-        </div>
+      <!-- Turning service -->
+      <div class="left-service service">
+        <img class="service-icon" src="images/turning.jpg" alt="Turning" />
+        <h4>Turning</h4>
+      </div>
 
-        <hr class="mobile-line" />
+      <hr class="mobile-line" />
 
-        <!-- Milling service -->
-        <div class="service">
-          <img class="service-icon" src="images/milling.jpg" alt="Milling" />
-          <h4>Milling</h4>
-        </div>
+      <!-- Milling service -->
+      <div class="service">
+        <img class="service-icon" src="images/milling.jpg" alt="Milling" />
+        <h4>Milling</h4>
+      </div>
 
-        <hr class="mobile-line" />
+      <hr class="mobile-line" />
 
-        <!-- Fabricating service -->
-        <div class="service">
-          <img
-            class="service-icon"
-            src="images/fabrication.png"
-            alt="Fabricating"
-          />
-          <h4>Fabricating</h4>
-        </div>
+      <!-- Fabricating service -->
+      <div class="service">
+        <img class="service-icon" src="images/fabrication.png" alt="Fabricating" />
+        <h4>Fabricating</h4>
+      </div>
 
-        <hr class="mobile-line" />
+      <hr class="mobile-line" />
 
-        <!-- Machining service -->
-        <div class="service">
-          <img
-            class="service-icon"
-            src="images/machining.jpg"
-            alt="Machining"
-          />
-          <h4>Machining</h4>
-        </div>
+      <!-- Machining service -->
+      <div class="service">
+        <img class="service-icon" src="images/machining.jpg" alt="Machining" />
+        <h4>Machining</h4>
+      </div>
 
-        <hr class="mobile-line" />
+      <hr class="mobile-line" />
 
-        <!-- Precision Engineering service -->
-        <div class="right-service service">
-          <img
-            class="service-icon"
-            src="images/precision_engineering.jpg"
-            alt="Precision"
-          />
-          <h4>Precision Engineering</h4>
-        </div>
+      <!-- Precision Engineering service -->
+      <div class="right-service service">
+        <img class="service-icon" src="images/precision_engineering.jpg" alt="Precision" />
+        <h4>Precision Engineering</h4>
       </div>
     </div>
+  </div>
 
-    <!-- Work Section -->
-    <div class="container" id="work">
-      <h3 class="w3-center">OUR WORK</h3>
-      <p class="w3-center w3-large">What we've done for people</p>
+  <!-- Work Section -->
+  <div class="container" id="work">
+    <h3 class="w3-center">OUR WORK</h3>
+    <p class="w3-center w3-large">What we've done for people</p>
 
-      <class class="w3-row-padding">
-        <!-- TODO add images of past work -->
-        <div class="w3-col l3 m6">
-          <img
-            src="images/work/air_seal.jpeg"
-            style="width: 100%"
-            class="w3-hover-opacity"
-            alt="A microphone"
-          />
-        </div>
+    <class class="w3-row-padding">
+      <!-- TODO add images of past work -->
+      <div class="w3-col l3 m6">
+        <img src="images/work/air_seal.jpeg" style="width: 100%" class="w3-hover-opacity" alt="A microphone" />
+      </div>
 
-        <div class="w3-col l3 m6">
-          <img
-            src="images/work/crane_rail_wheel.jpeg"
-            style="width: 100%"
-            class="w3-hover-opacity"
-            alt="A phone"
-          />
-        </div>
+      <div class="w3-col l3 m6">
+        <img src="images/work/crane_rail_wheel.jpeg" style="width: 100%" class="w3-hover-opacity" alt="A phone" />
+      </div>
 
-        <div class="w3-col l3 m6">
-          <img
-            src="images/work/boat_id.jpeg"
-            style="width: 100%"
-            class="w3-hover-opacity"
-            alt="A drone"
-          />
-        </div>
+      <div class="w3-col l3 m6">
+        <img src="images/work/boat_id.jpeg" style="width: 100%" class="w3-hover-opacity" alt="A drone" />
+      </div>
 
-        <div class="w3-col l3 m6">
-          <img
-            src="images/work/stepped_flange.jpeg"
-            style="width: 100%"
-            class="w3-hover-opacity"
-            alt="Soundbox"
-          />
-        </div>
+      <div class="w3-col l3 m6">
+        <img src="images/work/stepped_flange.jpeg" style="width: 100%" class="w3-hover-opacity" alt="Soundbox" />
+      </div>
 
-      </class>
-    </div>
+    </class>
+  </div>
 
-    <!-- Contact Section -->
-    <div class="container blue" id="contact">
-      <h3 class="w3-center">CONTACT</h3>
-      <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-      <div class="form">
-        <form action="/action_page.php" target="_blank">
-          <div class="form">
-            <p>
-              <input
-                class="w3-input w3-border"
-                type="text"
-                placeholder="Name"
-                required
-                name="Name"
-              />
-            </p>
-            <p>
-              <input
-                class="w3-input w3-border"
-                type="text"
-                placeholder="Email"
-                required
-                name="Email"
-              />
-            </p>
-            <p>
-              <input
-                class="w3-input w3-border"
-                type="text"
-                placeholder="Subject"
-                required
-                name="Subject"
-              />
-            </p>
-            <p>
-              <textarea
-                class="w3-input w3-border"
-                type="text"
-                placeholder="Message"
-                required
-                name="Message"
-              ></textarea>
-            </p>
-            <div class="mobile-center">
-              <button class="button button-white" type="submit">
-                <i class="fa fa-paper-plane"></i> SEND MESSAGE
-              </button>
-            </div>
+  <!-- Contact Section -->
+  <div class="container blue" id="contact">
+    <h3 class="w3-center">CONTACT</h3>
+    <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+    <div class="form">
+      <form action="mail.php" method="POST" target="_blank">
+        <div class="form">
+          <p>
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" />
+          </p>
+          <p>
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email" />
+          </p>
+          <p>
+            <input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject" />
+          </p>
+          <p>
+            <textarea class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></textarea>
+          </p>
+          <div class="mobile-center">
+            <button class="button button-white" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+            <input type="submit" value="Send"><input type="reset" value="Clear">
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="w3-center w3-black">
-      <div class="text-left">
-        <p class="links">
-          <a href="tel: 035 278 2944"
-            ><i class="fa fa-phone fa-fw"></i> 03 5278 2944</a
-          >
-          <br />
-          <a href="mailto:gdeng@pipeline.com.au"
-            ><i class="fa fa-envelope fa-fw"> </i> gdeng@pipeline.com.au</a
-          >
-          <br />
-          <a
-            href="https://www.google.com.au/maps/place/21%2F23+Cowie+St,+North+Geelong+VIC+3215/@-38.1064047,144.3485831,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad416d5b59c3ac9:0x1c2598c3ec2d74c7!8m2!3d-38.1064089!4d144.3507718"
-            target="_blank"
-          >
-            <i class="fa fa-map-marker fa-fw"></i> 21/23 Cowie St, North Geelong
-            VIC 3215
-          </a>
-        </p>
-      </div>
-      <p class="copyright">&copy; 2021 GD Manufacturing Engineers PTY Ltd.</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="w3-center w3-black">
+    <div class="text-left">
+      <p class="links">
+        <a href="tel: 035 278 2944"><i class="fa fa-phone fa-fw"></i> 03 5278 2944</a>
+        <br />
+        <a href="mailto:gdeng@pipeline.com.au"><i class="fa fa-envelope fa-fw"> </i> gdeng@pipeline.com.au</a>
+        <br />
+        <a href="https://www.google.com.au/maps/place/21%2F23+Cowie+St,+North+Geelong+VIC+3215/@-38.1064047,144.3485831,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad416d5b59c3ac9:0x1c2598c3ec2d74c7!8m2!3d-38.1064089!4d144.3507718"
+          target="_blank">
+          <i class="fa fa-map-marker fa-fw"></i> 21/23 Cowie St, North Geelong
+          VIC 3215
+        </a>
+      </p>
+    </div>
+    <p class="copyright">&copy; 2021 GD Manufacturing Engineers PTY Ltd.</p>
+  </footer>
 
-    <script>
-      // Toggle between showing and hiding the sidebar when clicking the menu icon
-      var mySidebar = document.getElementById("mySidebar");
+  <script>
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
 
-      function w3_open() {
-        if (mySidebar.style.display === "block") {
-          mySidebar.style.display = "none";
-        } else {
-          mySidebar.style.display = "block";
-        }
-      }
-
-      // Close the sidebar with the close button
-      function w3_close() {
+    function w3_open() {
+      if (mySidebar.style.display === "block") {
         mySidebar.style.display = "none";
+      } else {
+        mySidebar.style.display = "block";
       }
-    </script>
-  </body>
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+    }
+  </script>
+</body>
+
 </html>

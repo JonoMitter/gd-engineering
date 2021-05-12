@@ -177,7 +177,6 @@ p.copyright{
   /* min-height: 150px;
   min-width: 150px; */
   border-radius: 30px;
-
   width: 75%;
   height: 75%;
   object-fit: cover; /* Equivalent of the background-size: cover; of a background-image */
@@ -257,6 +256,7 @@ p.copyright{
   background-image: linear-gradient( to bottom, rgba(54, 76, 149, 0.5), rgba(255, 98, 0, 0.95)), url("images/background.jpg");
   min-height: 80%;
   box-shadow: inset 0 0 0 2000px rgba(0, 16, 39, 0.7);
+  /* background-blend-mode:darken; */
 }
 
 .min-height {
