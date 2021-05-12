@@ -1,11 +1,11 @@
 <?php 
-    $name = $_POST['Name'];
-    $email = $_POST['Email'];
-    $message = $_POST['Message'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
     $formcontent="From: $name \n Message: $message";
     $recipient = "jonomitter@outlook.com";
-    $subject = $_POST['Subject'];
+    $subject = $_POST['subject'];
     $mailheader = "From: $email \r\n";
-    mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+    mail($recipient, $subject, $formcontent, $mailheader);
     echo "Thank You!";
 ?>
