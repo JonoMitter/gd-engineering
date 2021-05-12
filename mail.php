@@ -6,6 +6,6 @@
     $recipient = "jonomitter@outlook.com";
     $subject = $_POST['subject'];
     $mailheader = "From: $email \r\n";
-    mail($recipient, $subject, $formcontent, $mailheader);
+    mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
     echo "Thank You!";
 ?>
