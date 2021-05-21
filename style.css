@@ -326,7 +326,6 @@ p.copyright {
 
 .image {
   position: relative;
-  /* padding: 0 8px; */
 }
 
 .image__img {
@@ -354,7 +353,14 @@ p.copyright {
 }
 
 .image__title {
+  width: 80%;
+  text-align: center;
   font-size: 2rem;
+}
+
+.image__description{
+  width: 80%;
+  text-align: center;
 }
 
 /*
@@ -407,6 +413,13 @@ p.copyright {
     border-top: 2px solid white;
     width: 75%;
     margin: auto;
+  }
+  .image__title {
+    font-size: 3.5rem;
+  }
+  
+  .image__description{
+    font-size: 2.5rem;
   }
   .padding-left, .padding-right {
     padding: 0;
