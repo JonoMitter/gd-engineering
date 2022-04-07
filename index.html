@@ -152,9 +152,9 @@
     </div>
 
     <!-- Work Section -->
-    <div class="container" id="work">
+    <div class="work--container" id="work">
         <h3 class="w3-center">OUR WORK</h3>
-        <p class="w3-center ">What we've done for people</p>
+        <p class="w3-center sub-heading">What we've done for people</p>
 
         <class class="w3-row-padding">
 
@@ -194,51 +194,36 @@
         </class>
     </div>
 
-    <!-- Contact Section -->
-    <div class="container blue" id="contact">
-        <h3 class="w3-center">CONTACT</h3>
-        <p class="w3-center">Lets get in touch. Send us a message:</p>
-        <div class="form">
-            <form action="mail.php" method="POST" target="_blank">
-                <div class="form">
-                    <p>
-                        <input class="w3-input w3-border" type="text" placeholder="Name" required name="name" />
-                    </p>
-                    <p>
-                        <input class="w3-input w3-border" type="text" placeholder="Email" required name="email" />
-                    </p>
-                    <p>
-                        <input class="w3-input w3-border" type="text" placeholder="Subject" required name="subject" />
-                    </p>
-                    <p>
-                        <textarea class="w3-input w3-border" type="text" placeholder="Message" required
-                            name="message"></textarea>
-                    </p>
-                    <div class="mobile-center">
-                        <button class="button button-white" type="submit">
-                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
 
-    <!-- Footer -->
-    <footer class="w3-center w3-black">
-        <div class="text-left">
-            <p class="links">
-                <a href="tel: 035 278 2944"><i class="fa fa-phone fa-fw"></i> 03 5278 2944</a>
+
+    <!-- Contact Section -->
+    <section> 
+        <svg style="display: block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#364c95" fill-opacity="1"
+                d="M0,128L120,138.7C240,149,480,171,720,165.3C960,160,1200,128,1320,112L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+            </path>
+        </svg>
+        <div class="contact--container blue" id="contact">
+            <h3 class="w3-center">CONTACT</h3>
+            <p class="w3-center sub-heading">Lets get in touch.</p>
+            <div class="links">
+                <a class="contact--link" href="tel: 035 278 2944"><i class="fa fa-phone fa-fw"></i> 03 5278 2944</a>
                 <br />
-                <a href="mailto:gdeng@pipeline.com.au"><i class="fa fa-envelope fa-fw"> </i> gdeng@pipeline.com.au</a>
+                <a class="contact--link" href="mailto:gdeng@pipeline.com.au"><i class="fa fa-envelope fa-fw"> </i>
+                    gdeng@pipeline.com.au</a>
                 <br />
-                <a href="https://www.google.com.au/maps/place/21%2F23+Cowie+St,+North+Geelong+VIC+3215/@-38.1064047,144.3485831,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad416d5b59c3ac9:0x1c2598c3ec2d74c7!8m2!3d-38.1064089!4d144.3507718"
+                <a class="contact--link"
+                    href="https://www.google.com.au/maps/place/21%2F23+Cowie+St,+North+Geelong+VIC+3215/@-38.1064047,144.3485831,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad416d5b59c3ac9:0x1c2598c3ec2d74c7!8m2!3d-38.1064089!4d144.3507718"
                     target="_blank">
                     <i class="fa fa-map-marker fa-fw"></i> 21/23 Cowie St, North Geelong VIC
                 </a>
-            </p>
+            </div>
         </div>
-        <p class="copyright">&copy; 2021 GD Manufacturing Engineers PTY Ltd.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black">
+        <p class="copyright">&copy; <script>document.write(/\d{4}/.exec(Date())[0])</script> GD Manufacturing Engineers PTY Ltd.</p>
     </footer>
 
     <script>
